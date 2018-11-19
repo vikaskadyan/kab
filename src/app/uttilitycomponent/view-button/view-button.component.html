@@ -1,0 +1,127 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-9 left">
+
+            <agm-map style="height: 90vh" [latitude]="userLat" [longitude]="userLong">
+
+                <agm-marker [latitude]="userLat" [longitude]="userLong" [iconUrl]="">
+
+                </agm-marker>
+
+                <agm-marker [latitude]="soslat" [longitude]="soslong" [iconUrl]="">
+
+                </agm-marker>
+
+            <agm-direction [origin]="direction.origin" [destination]="direction.destination" ></agm-direction>
+
+            </agm-map>
+        </div>
+
+
+
+        <div class="col-sm-3 right custommarginright overflow paddingtop">
+            <div class="container scroll-area">
+
+                <div class="row custom">
+
+                    <div class="col-sm-12 smalltext textalignleft">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="./assets/images/Add-user-01.svg" alt="IMG">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="table">
+                                <table class="table table-responsive popupaddress">
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                <strong>
+                                                    Name </strong>
+                                            </td>
+                                            <td class="text-primary">Vikas Kadyan </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>
+                                                    Address </strong>
+                                            </td>
+                                            <td class="text-primary">19/8Gulmohar Road,shipra sunciti, Indirapuram, ghaziabad,u.p. </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <strong>
+                                                    Mobile </strong>
+                                            </td>
+                                            <td class="text-primary"> Other</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <strong>
+                                                    Status </strong>
+                                            </td>
+                                            <td class="text-primary"> CREATED</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row" style="padding-top:10px;">
+                    <div>
+                        <table class="">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                            <img src="./assets/images/marker_greenA.png" alt="IMG"> 
+                                    </td>
+                                    <td>
+                                        SOS User Location
+                                    </td>
+                                </tr>
+                                <br>
+                                <tr style="padding-top:50px;">
+                                        <td>
+                                                <img src="./assets/images/markerB.png" alt="IMG"> 
+                                        </td>
+                                        <td>
+                                            Control Room Location
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                            
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="center">
+                <mat-dialog-actions align="center">
+                    <button md-raised-button [mat-dialog-close]="true">Close</button>
+                </mat-dialog-actions>
+            </div>
+        </div>
+
+    </div>
+</div>

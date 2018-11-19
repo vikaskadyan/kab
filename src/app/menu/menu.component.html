@@ -1,0 +1,38 @@
+<nav class="navbar navbar-light bg-faded custom">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/images/img-01.png" width="70" height="30" class="d-inline-block align-top" alt="">
+  </a>
+
+  <form class="form-inline center">
+    <div class="row" *ngIf="_showtotalstatus ">
+
+        <div class="totalstatus" >
+           <b>Today Status</b>
+          </div>
+      <div class="totalcreated" >
+        Total Created =
+        <b>{{totalcreated}}</b>
+      </div>
+      <div class="totalprocessed">
+        Total Processed =
+        <b>{{totalprocessed}}</b>
+      </div>
+      <div class="totalresolved">
+        Total Resolved =
+        <b>{{totalresolved}}</b>
+      </div>
+
+    </div>
+  </form>
+
+  <form class="form-inline" *ngIf="isloginbuttonshow">
+    <input type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="logoutButtonClick();" value="Logout"
+    />
+  </form>
+
+  <form class="form-inline" *ngIf="islogoutbuttonshow">
+    <input type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="logoutButtonClick();" value="Logout"
+    />
+  </form>
+
+</nav>

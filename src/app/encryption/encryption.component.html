@@ -1,0 +1,13 @@
+<form action="" method="post" #form="ngForm" (ngSubmit)="decrypt(form.value)" autocomplete="off">
+  <input type="text" name="envalue" ngModel/>
+  <input type="submit" value="Submit"/>
+</form>
+<label>{{decryptValue}}</label>
+
+<br>
+<br>
+<form action="" method="post" #form1="ngForm" (ngSubmit)="encrypt(form1.value)" autocomplete="off">
+  <input type="text" name="envalue" ngModel/>
+  <input type="submit" value="Submit"/>
+</form>
+<label>{{encryptValue}}</label>

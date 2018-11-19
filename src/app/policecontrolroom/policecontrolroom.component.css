@@ -1,0 +1,60 @@
+.custom {
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+    margin-bottom:10px;
+}
+
+.smalltext1{
+    font-size : 10px;
+}
+
+.custommarginright {
+    margin-right: 0px !important;
+}
+
+.sosimage {
+    padding-top: 15px;
+}
+
+.textalignleft1 {
+    text-align: left !important;
+}
+
+.textaligncenter1 {
+    text-align: center !important;
+}
+
+::ng-deep .text-warning {
+    color : #FF8800 !important;
+}
+
+.paddingtop {
+    padding-top: 3px;
+}
+
+/*:host /deep/ ng2-smart-table tbody > tr > td:first-child {
+    color: #ED1C24;
+    }*/
+    
+    :host /deep/ yellow ng2-smart-table tbody > tr {
+    color: yellow !important;
+}
+  
+@media (max-width: 575px) {
+    .paddingtop {
+        padding-top: 3em !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

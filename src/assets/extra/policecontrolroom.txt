@@ -1,0 +1,146 @@
+<!--<agm-map style="height: 700px" [latitude]="latitude" [longitude]="longitude" [zoom]="11" [scrollwheel]="true">
+      <agm-marker [latitude]="latitude" [longitude]="longitude">
+        <agm-snazzy-info-window [maxWidth]="200" [maxHeight]="200"[closeWhenOthersOpen]="false" [isOpen]= "true" [openOnMarkerClick]="true">
+          <ng-template>
+           <strong>Name : Vikas</strong>
+          </ng-template>
+        </agm-snazzy-info-window>
+      </agm-marker>
+    </agm-map>-->
+
+<!-- <agm-map style="height: 700px" [latitude]="latitude" [longitude]="longitude" [zoom]="11" [scrollwheel]="true">
+        <agm-marker [latitude]="latitude" [longitude]="longitude">
+            <agm-snazzy-info-window [maxWidth]="200" [isOpen]="isSnazzyInfoWindowOpened" [latitude]="latitude" [longitude]="longitude">
+                <ng-template>
+                    hello !
+                </ng-template>
+            </agm-snazzy-info-window>
+        </agm-marker>
+    </agm-map>
+  
+    <button (click)="toggleSnazzyInfoWindow()">Toggle SnazzyInfoWindow</button>-->
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-7 left">
+            <agm-map style="height: 100vh" [latitude]="latitude" [longitude]="longitude">
+
+                <agm-marker [latitude]="latitude" [longitude]="longitude" (markerClick)="toggleSnazzyInfoWindow()">
+
+                    <agm-snazzy-info-window [isOpen]="isSnazzyInfoWindowOpened" [latitude]="latitude" [longitude]="longitude">
+
+                        <ng-template>
+                            <img src="assets/images/img-01.png" style="height:150px;width:150px;" />
+                            <br>
+                            <br>
+                            <strong>Vikas Kadyan</strong>
+                            <br>
+                            <p>7291040143
+                                <br> Green field colony
+                            </p>
+
+                        </ng-template>
+
+                    </agm-snazzy-info-window>
+                </agm-marker>
+            </agm-map>
+        </div>
+
+        <div class="col-sm-5 right custommarginright overflow">
+            <div class="container scroll-area">
+
+
+                <div class="row custom" >
+
+                    <!--<div class="col-sm-4 left ">
+                        <img class="sosimage" src="./assets/images/sosuser.png" alt="IMG">
+                    </div>-->
+
+                    <div class="col-sm-12 smalltext textalignleft">
+
+                        <!--<table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Mobile
+                                    </th>
+                                    <th>
+                                        Message
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody *ngFor="let sosuserdetail of sosUserDetails">
+                                <tr>
+                                    <td class="text-primary"> {{sosuserdetail.FirstName}} {{sosuserdetail.LastName}}</td>
+                                    <td class="text-primary"> {{sosuserdetail.Mobile}}</td>
+                                    <td class="text-primary"> {{sosuserdetail.RequestMessage}} </td>
+                                    <td class="text-primary"> {{sosuserdetail.RequestStatus}} </td>
+                                    <td>Update</td>
+                                </tr>
+
+                            </tbody>
+                        </table>-->
+
+                    <ng2-smart-table [settings]="settings" [source]="sosUserDetails" class="table" > </ng2-smart-table>
+
+
+                    </div>
+
+                    <!--<div class="col-sm-12 smalltext textalignleft">
+
+                        <div class="table">
+                            <table class="table ">
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                Address </strong>
+                                        </td>
+                                        <td class="text-primary">{{sosuserdetail.Address}} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                Message </strong>
+                                        </td>
+                                        <td class="text-primary"> {{sosuserdetail.RequestMessage}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                Message </strong>
+                                        </td>
+                                        <td class="text-primary"> {{sosuserdetail.RequestStatus}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="textaligncenter">
+                            <button type="button" class="btn btn-secondary" style="margin-bottom:10px;" (click)="toggleSnazzyInfoWindow()">
+                                Update Status
+                            </button>
+                        </div>-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>

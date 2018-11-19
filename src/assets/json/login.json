@@ -1,0 +1,18 @@
+{
+  "IsSuccess": 1,
+  "Message": "User Logged In successfully.",
+  "Data": {
+    "Id": 22,
+    "FirstName": "Lalit",
+    "LastName": null,
+    "Mobile": null,
+    "Token": "5b3bb55d-9250-493b-ad76-f658b1cbb1bc",
+    "address": "Faridabad",
+    "UserType": "ADMIN",
+    "AreaPinCode": 121008,
+    "FirstContact": null,
+    "SecondContact": null,
+    "NearByHospital": null,
+    "Phone": null
+  }
+}

@@ -1,0 +1,34 @@
+.custom {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin:10px;
+
+}
+
+.totalcreated {
+    color : red;
+    padding-right: 30px;
+    padding-top: 6px;
+}
+
+.totalprocessed {
+    padding-right: 30px;
+    padding-top: 6px;
+    color: #f9a42c;
+}
+
+.totalresolved {
+    color : green;
+    padding-top: 6px;
+}
+
+.totalstatus {
+    color : #15759b;
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+
+.center {
+    text-align:center;
+}

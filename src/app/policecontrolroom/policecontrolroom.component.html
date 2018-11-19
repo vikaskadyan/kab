@@ -1,0 +1,77 @@
+
+
+    <div class="row">
+
+        <div class="col-sm-7 left paddingtop">
+
+            <agm-map style="height: 90vh" [latitude]="latitude" [longitude]="longitude">
+
+                    <agm-marker
+                         *ngFor="let sosuserdetail of sosUserDetails;let i = index"
+                         [latitude]="getFloat(sosuserdetail.Lat)" 
+                         [longitude]="getFloat(sosuserdetail.Long)" 
+                         [iconUrl]="getMarkerURL(sosuserdetail)"
+                         >
+
+                        <agm-snazzy-info-window 
+                        [maxWidth]="700" 
+                        [maxHeight]="900"
+                        [closeWhenOthersOpen]="true"
+                         >
+
+                            <ng-template >
+                                
+                           <p> <img src="./assets/images/Add-user-01.svg" alt="IMG">
+                                
+                                <strong></strong>
+                                
+                                {{sosuserdetail.FirstName}}
+                                    Green field colony
+                                </p>
+                            
+
+                            </ng-template>
+
+                        </agm-snazzy-info-window>
+                       
+                        <!--<agm-snazzy-info-window style="height:100%;"  [latitude]="sosuserdetail.Lat" [longitude]="sosuserdetail.Long">
+
+                            <ng-template>
+                                    <img src="./assets/images/Add-user-01.svg" alt="IMG">
+                                <br>
+                                <br>
+                                <strong></strong>
+                                <br>
+                                <p>{{sosuserdetail.FirstName}}
+                                    <br> Green field colony
+                                </p>
+
+                            </ng-template>
+
+                        </agm-snazzy-info-window>-->
+
+                    </agm-marker>
+                
+            </agm-map>
+        </div>
+
+    
+
+<div class="col-sm-5 right custommarginright overflow paddingtop">
+    <div class="container scroll-area">
+
+        <div class="row custom">
+
+            <div class="col-sm-12 smalltext textalignleft">
+
+                <ng2-smart-table [settings]="settings" [source]="sosUserDetails" (custom)="viewclicked($event)" class="table table-responsive"> </ng2-smart-table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>

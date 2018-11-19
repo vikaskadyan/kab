@@ -1,0 +1,42 @@
+.custom {
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+    margin-bottom:10px;
+    background-color: #e8ecf2;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.smalltext1{
+    font-size : 10px;
+}
+
+.custommarginright {
+    margin-right: 0px !important;
+}
+
+.sosimage {
+    padding-top: 15px;
+}
+
+.textalignleft1 {
+    text-align: left !important;
+}
+
+.textaligncenter1 {
+    text-align: center !important;
+}
+
+.popupaddress {
+    background-color: #d7dde5;
+    color: #007bff!important;
+}
+
+@media (max-width: 575px) {
+    .paddingtop {
+        padding-top: 3em !important;
+    }
+}
